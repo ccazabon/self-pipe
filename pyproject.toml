@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "self-pipe"
+version = "1.0.0"
+description = "A pure-Python implementation of the Unix 'self-pipe trick', used to safely handle signals in an event loop."
+authors = ["Charles Cazabon <charlesc-software-selfpipe@pyropus.ca>"]
+license = "GPL-2.0-only"
+readme = "README.md"
+repository = "https://github.com/ccazabon/self-pipe"
+keywords = ["signal", "pipe", "daemon", "event-loop", "UNIX", "djb"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: DFSG approved",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: Unix",
+    "Operating System :: POSIX",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = {extras = ["black"], version = "^7.1.0"}
+isort = {extras = ["black"], version = "^5.13.2"}
+mypy = "^1.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
