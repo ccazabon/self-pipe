@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "self-pipe"
-version = "1.0.0"
+version = "1.1.0"
 description = "A pure-Python implementation of the Unix 'self-pipe trick', used to safely handle signals in an event loop."
 authors = ["Charles Cazabon <charlesc-software-selfpipe@pyropus.ca>"]
 license = "GPL-2.0-only"
