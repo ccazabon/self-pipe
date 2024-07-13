@@ -26,7 +26,7 @@ The "trick" is is a simple way to safely catch Unix signals and be notified that
 they have been received, without running into any of the complex issues that
 surround signals and signal handlers - things like the above.
 
-[^1]: See https://cr.yp.to/docs/selfpipe.html for the djb's very brief
+[^1]: See https://cr.yp.to/docs/selfpipe.html for djb's very brief
 description, and 
 https://skarnet.org/software/skalibs/libstddjb/selfpipe.html
 for a little more discussion of the issues involved.
