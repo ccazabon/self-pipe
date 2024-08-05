@@ -29,12 +29,6 @@ flake8 = {extras = ["black"], version = "^7.1.0"}
 isort = {extras = ["black"], version = "^5.13.2"}
 mypy = "^1.10.1"
 
-
-[[tool.poetry.source]]
-name = "pyropus"
-url = "http://hex.pyropus.ca:8080/"
-priority = "supplemental"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
